@@ -1,0 +1,167 @@
+/* 폰트적용 */
+@import url(https://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+html {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+body,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  /* 1 */
+}
+.top-image {
+  overflow-x: hidden;
+  /* 2 */
+}
+
+a {
+  display: block;
+  padding: 10px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.logo-box {
+  text-align: center;
+  padding: 15px;
+}
+
+.con {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.navi > ul {
+  display: inline-block;
+}
+
+.navi > ul > li {
+  display: inline-block;
+  padding: 0 25px;
+}
+
+.navi > ul > li > a {
+  font-weight: bold;
+}
+
+.top-image {
+  padding: 0 30px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.prod-list {
+}
+
+.prod-list > ul::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.prod-list > ul > li {
+  float: left;
+  padding: 0 19.5px;
+  margin-top: 20px;
+  box-sizing: border-box;
+}
+
+.image-box > img {
+  display: block;
+  width: 100%;
+}
+.image-box {
+  position: relative;
+  overflow: hidden;
+  /* 3 */
+}
+
+.prod-list > ul > li > .image-box::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 10px;
+  z-index: 2;
+}
+
+.prod-list > ul > li:hover > .image-box::before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.prod-list > ul > li > .image-box::after {
+  content: "VIEW";
+  position: absolute;
+  display: block;
+  font-weight: bold;
+  top: 50%;
+  left: 50%;
+  color: white;
+  border-radius: 20px;
+  border: solid 3px;
+  padding: 8px;
+  transform: translateX(-50%) translateY(-50%);
+  opacity: 0;
+  z-index: 3;
+}
+
+.prod-list > ul > li:hover > .image-box::after {
+  opacity: 1;
+}
+
+.prod-list > ul > li:hover .prod-name {
+  text-decoration: underline;
+}
+
+.prod-list > ul > li .prod-price::after {
+  content: "원";
+}
+
+@media (max-width: 1045px) {
+  .top-image > .top-image-box {
+    padding-left: -40%;
+    /* 이거안먹힘..왜징 */
+  }
+  .navi {
+    display: none;
+  }
+}
+
+@media (max-width: 1025px) {
+  .prod-list > ul > li {
+    width: calc(100% / 4);
+  }
+}
+
+@media (min-width: 666px) and (max-width: 890px) {
+  .prod-list > ul > li {
+    width: calc(100% / 3);
+  }
+}
+
+@media (min-width: 530px) and (max-width: 665px) {
+  .prod-list > ul > li {
+    width: calc(100% / 2);
+  }
+}
+
+@media (max-width: 529px) {
+  .prod-list > ul > li {
+    width: 100%;
+  }
+}
