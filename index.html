@@ -2,191 +2,302 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="/index.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/common.css" />
+    <link rel="stylesheet" href="/common.js" />
     <title>chae-blog</title>
+
+            <!-- 토스트 UI 시작 -->
+<!-- 하이라이트 라이브러리 추가, 토스트 UI 에디터에서 사용됨 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.1/highlight.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.ccoloudflare.com/ajax/libs/highlight.js/10.4.1/styles/default.min.css">
+
+    <!-- 토스트 UI 에디터, 자바스크립트 코어 -->
+    <script src="https://uicdn.toast.com/editor/latest/toastui-editor-all.min.js" defer></script>
+
+    <!-- 코드 미러 라이브러리 추가, 토스트 UI 에디터에서 사용됨 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.3/codemirror.min.css" />
+    <!-- 토스트 UI 에디터, CSS 코어 -->
+    <link rel="stylesheet" href="https://uicdn.toast.com/editor/latest/toastui-editor.min.css" />
+
+    <!-- 토스트 UI 에디터, 신택스 하이라이트 플러그인 추가 -->
+    <script src="https://uicdn.toast.com/editor-plugin-code-syntax-highlight/latest/toastui-editor-plugin-code-syntax-highlight.min.js" defer></script>
+    <!-- 토스트 UI 끝 -->
+
+    <!-- 제이쿼리 불러오기 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- 폰트어썸 불러오기 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <script src="/common.js" defer></script>
   </head>
   <body>
-    <div class="logo-box">
-      <a href="#"><img src="/images/logo.PNG" alt="" /></a>
-    </div>
+    <div class="body-content">
+      <header class="top-bar visible-md-down">
+        <div class="con flex flex-jc-sb h100p">
+          <a class="logo flex flex-ai-c" href="#"
+            ><span><i class="fas fa-candy-cane"></i></span
+            ><span>CANDY BOMB</span></a
+          >
+          <nav class="menu-box h100p">
+            <ul class="flex h100p">
+              <li>
+                <a class="flex h100p" href="#">
+                  <span><i class="fas fa-home"></i></span><span> HOME</span></a
+                >
+              </li>
+              <li>
+                <a class="flex h100p" href="#"
+                  ><span><i class="fas fa-address-card"></i></span
+                  ><span> ABOUT</span></a
+                >
+              </li>
+              <li>
+                <a class="flex h100p" href="#"
+                ><span><i class="fas fa-list-alt"></i></span
+                ><span>PORTFOLIO</span></a
+              >
+              </li>
+              <li>
+                <a class="flex h100p" href="#"
+                  ><span><i class="far fa-newspaper"></i></span
+                  ><span>ARTICLE</span></a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+    
+      <!-- 모바일 버전 -->
+    <div class="mobile-padding visible-sm-down"></div>
+      <header class="mobile-top-bar visible-sm-down flex">
+        <div class="side-menu-bar flex flex-100">
+          <div class="toggle-box">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+        <a class="logo flex flex-ai-c flex-100" href="#"
+          ><span><i class="fas fa-candy-cane"></i></span
+          ><span>CANDY BOMB</span></a
+        >
+        <a class="flex-100" href="#"></a>
+      </header>
+    
+      <aside class="mobile-side-bar visible-sm-down h100p">
+        <nav class="flex aside-menu-box h100p ">
+          <ul>
+            <li>
+              <a class="menu-items " href="#"
+                ><span><i class="fas fa-home"></i></span><span> HOME</span></a
+              >
+            </li>
+            <li>
+              <a class="menu-items" href="#"
+                ><span><i class="fas fa-address-card"></i></span
+                ><span> ABOUT</span></a
+              >
+            </li>
+            <li>
+             <li>
+              <a class="menu-items" href="#"
+                ><span><i class="fas fa-list-alt"></i></span
+                ><span>PORTFOLIO</span></a
+              >
+            </li>
+              
+            </li>
+            <li>
+              <a class="menu-items" href="#"
+                ><span><i class="far fa-newspaper"></i></span
+                ><span>ARTICLE</span></a
+              >
+            </li>
+          </ul>
+        </nav>
+      </aside>
+      <hr>
+    
+    
+      
+  <main>
+    <section class="latest-articles con-min-width con">
+     <h1 class="con">
+       <div class="latest-articles-box ">
+        <span>
+          <i class="fas fa-kiwi-bird"></i>
+        </span>
+        <span>
+          LATEST ARTICLES
+        </span>
+       </div>
+        
+      </h1>
+    </section>
 
-    <div class="navi con">
-      <ul>
-        |
-        <li><a href="#">BRAND </a></li>
-        |
-        <li><a href="#"> VISUAL </a></li>
-        |
-        <li><a href="#"> STYLE </a></li>
-        |
-        <li><a href="#"> MEDIA </a></li>
-        |
-        <li><a href="#"> NEWS </a></li>
-        |
-        <li><a href="#"> STORE </a></li>
-        |
-        <li><a href="#"> CUSTOMER </a></li>
-        |
-      </ul>
-    </div>
+    <section class="section-latest-articles con-min-width">
+      <div class="con">
+        <div class="article-list-box">
+          <ul>
+            
+         
+            <li>
+              
+              <h1 class="article-list-box__title">
+                
+                <span class="highlight">자바스크립트 태그</span>
+                
+              </h1>
 
-    <div class="top-image con">
-      <div class="top-image-box">
-        <img src="/images/bb.PNG" alt="" />
+              <div class="reg_wirter flex-ai-c">
+                <span class="pencil">
+                  <i class="fas fa-pencil-alt"></i>
+                </span>
+                <div class="article-list-box__reg-date">2020-01-12 ,</div>
+              
+                <div class="article-list-box__writer">
+                  <span>김밤빵
+                  </span>
+                  <span>
+                    <svg viewBox="0 0 264 280">
+                      <use xlink:href="#avatar-1"></use>
+                    </svg>
+                  </span>
+                </div>
+  
+
+              </div>
+             
+
+              <div class="article-list-box__body">
+                <script type="text/x-template">
+# 태그
+```codepen
+https://codepen.io/jangka44/embed/NWROGrL?height=265&theme-id=light&default-tab=html,result&editable=true
+```
+
+# 콘솔
+```codepen
+https://codepen.io/jangka44/embed/zYKmvoG?height=300&theme-id=light&default-tab=js,result&editable=true
+```
+
+
+                </script>
+                <div class="toast-ui-viewer"></div>
+              </div>
+            </li>
+            <li>
+               
+              <h1 class="article-list-box__title">
+                <span class="highlight">
+                  CSS에서 before 에 폰트어썸 적용하기
+                </span>
+              </h1>
+              <div class="reg_wirter flex-ai-c">
+                <span class="pencil">
+                  <i class="fas fa-pencil-alt"></i>
+                </span>
+                <div class="article-list-box__reg-date">2020-01-12 ,</div>
+              
+                <div class="article-list-box__writer">
+                  <span>김밤빵
+                  </span>
+                  <span>
+                    <svg viewBox="0 0 264 280">
+                      <use xlink:href="#avatar-1"></use>
+                    </svg>
+                  </span>
+                </div>
+  
+
+              </div>
+              
+              <div class="article-list-box__body">
+                <script type="text/x-template">
+                  # 예시 - Font Awesome 응용 사용 방법
+```html
+.tags-area:before {
+  content: "\f02c";
+  padding-right: 10px;
+   
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+```
+                </script>
+                <div class="toast-ui-viewer"></div>
+              </div>
+
+            </li>
+
+            
+          </ul>
+        </div>
       </div>
+    </section>
+
+  </main>
+    
+      <hr>
+    
+      <!-- footer -->
+      <footer class="bottom-bar visible-md-down">
+        <div class="bottom-box flex flex-d-c">
+          <div class="logo-box">
+            <a class="logo flex" href="#"
+            ><span><i class="fas fa-candy-cane"></i></span
+            ><span>CANDY BOMB</span></a
+          >
+    
+          </div>
+          <div class="bottom-content-box">
+            Welcome chae-blog - ! <br>
+            have a good time  (◍•ᴗ•◍)❤<br> <br>
+            OH CHAE YEONG  <br>
+            1ouorrr@gmail.com <br> <br>
+
+            ©CHAE96. ALL RIGHT RESERVED.
+          </div>
+        </div>
+      </footer>
+
+      
+      <!-- mobile footer -->
+      <footer class="bottom-bar mobile-bottom-bar visible-sm-down">
+        <div class="bottom-box flex flex-d-c">
+          <div class="logo-box">
+            <a class="logo flex" href="#"
+            ><span><i class="fas fa-candy-cane"></i></span
+            ><span>CANDY BOMB</span>
+            </a>
+    
+          </div>
+          <div class="mobile bottom-content-box">
+            Welcome chae-blog - ! <br>
+            have a good time  (◍•ᴗ•◍)❤<br> <br>
+            OH CHAE YEONG  <br>
+            1ouorrr@gmail.com <br> <br>
+
+            ©CHAE96. ALL RIGHT RESERVED.
+          </div>
+        </div>
+      </footer>
     </div>
 
-    <div class="prod-list con">
-      <ul class="row">
-        <li class="cell">
-          <div class="image-box">
-            <img src="/images/cc.PNG" alt="" />
-          </div>
-          <div class="prod-name">고앵쓰와 호박쓰</div>
-          <div class="prod-price">2,000,000</div>
-        </li>
-        <li class="cell">
-          <div class="image-box">
-            <img src="/images/cc.PNG" alt="" />
-          </div>
-          <div class="prod-name">고앵쓰와 호박쓰</div>
-          <div class="prod-price">2,000,000</div>
-        </li>
-        <li class="cell">
-          <div class="image-box">
-            <img src="/images/cc.PNG" alt="" />
-          </div>
-          <div class="prod-name">고앵쓰와 호박쓰</div>
-          <div class="prod-price">2,000,000</div>
-        </li>
-        <li class="cell">
-          <div class="image-box">
-            <img src="/images/cc.PNG" alt="" />
-          </div>
-          <div class="prod-name">고앵쓰와 호박쓰</div>
-          <div class="prod-price">2,000,000</div>
-        </li>
-        <li class="cell">
-          <div class="image-box">
-            <img src="/images/cc.PNG" alt="" />
-          </div>
-          <div class="prod-name">고앵쓰와 호박쓰</div>
-          <div class="prod-price">2,000,000</div>
-        </li>
-        <li class="cell">
-          <div class="image-box">
-            <img src="/images/cc.PNG" alt="" />
-          </div>
-          <div class="prod-name">고앵쓰와 호박쓰</div>
-          <div class="prod-price">2,000,000</div>
-        </li>
-        <li class="cell">
-          <div class="image-box">
-            <img src="/images/cc.PNG" alt="" />
-          </div>
-          <div class="prod-name">고앵쓰와 호박쓰</div>
-          <div class="prod-price">2,000,000</div>
-        </li>
-        <li class="cell">
-          <div class="image-box">
-            <img src="/images/cc.PNG" alt="" />
-          </div>
-          <div class="prod-name">고앵쓰와 호박쓰</div>
-          <div class="prod-price">2,000,000</div>
-        </li>
-        <li class="cell">
-          <div class="image-box">
-            <img src="/images/cc.PNG" alt="" />
-          </div>
-          <div class="prod-name">고앵쓰와 호박쓰</div>
-          <div class="prod-price">2,000,000</div>
-        </li>
-        <li class="cell">
-          <div class="image-box">
-            <img src="/images/cc.PNG" alt="" />
-          </div>
-          <div class="prod-name">고앵쓰와 호박쓰</div>
-          <div class="prod-price">2,000,000</div>
-        </li>
-        <li class="cell">
-          <div class="image-box">
-            <img src="/images/cc.PNG" alt="" />
-          </div>
-          <div class="prod-name">고앵쓰와 호박쓰</div>
-          <div class="prod-price">2,000,000</div>
-        </li>
-        <li class="cell">
-          <div class="image-box">
-            <img src="/images/cc.PNG" alt="" />
-          </div>
-          <div class="prod-name">고앵쓰와 호박쓰</div>
-          <div class="prod-price">2,000,000</div>
-        </li>
-        <li class="cell">
-          <div class="image-box">
-            <img src="/images/cc.PNG" alt="" />
-          </div>
-          <div class="prod-name">고앵쓰와 호박쓰</div>
-          <div class="prod-price">2,000,000</div>
-        </li>
-        <li class="cell">
-          <div class="image-box">
-            <img src="/images/cc.PNG" alt="" />
-          </div>
-          <div class="prod-name">고앵쓰와 호박쓰</div>
-          <div class="prod-price">2,000,000</div>
-        </li>
-        <li class="cell">
-          <div class="image-box">
-            <img src="/images/cc.PNG" alt="" />
-          </div>
-          <div class="prod-name">고앵쓰와 호박쓰</div>
-          <div class="prod-price">2,000,000</div>
-        </li>
-        <li class="cell">
-          <div class="image-box">
-            <img src="/images/cc.PNG" alt="" />
-          </div>
-          <div class="prod-name">고앵쓰와 호박쓰</div>
-          <div class="prod-price">2,000,000</div>
-        </li>
-        <li class="cell">
-          <div class="image-box">
-            <img src="/images/cc.PNG" alt="" />
-          </div>
-          <div class="prod-name">고앵쓰와 호박쓰</div>
-          <div class="prod-price">2,000,000</div>
-        </li>
-        <li class="cell">
-          <div class="image-box">
-            <img src="/images/cc.PNG" alt="" />
-          </div>
-          <div class="prod-name">고앵쓰와 호박쓰</div>
-          <div class="prod-price">2,000,000</div>
-        </li>
-        <li class="cell">
-          <div class="image-box">
-            <img src="/images/cc.PNG" alt="" />
-          </div>
-          <div class="prod-name">고앵쓰와 호박쓰</div>
-          <div class="prod-price">2,000,000</div>
-        </li>
-        <li class="cell">
-          <div class="image-box">
-            <img src="/images/cc.PNG" alt="" />
-          </div>
-          <div class="prod-name">고앵쓰와 호박쓰</div>
-          <div class="prod-price">2,000,000</div>
-        </li>
-        <li class="cell">
-          <div class="image-box">
-            <img src="/images/cc.PNG" alt="" />
-          </div>
-          <div class="prod-name">고앵쓰와 호박쓰</div>
-          <div class="prod-price">2,000,000</div>
-        </li>
-      </ul>
-    </div>
+   <!-- svgs시작 -->
+   <div class= "svgs" >
+    <svg id="avatar-1" viewBox="0 0 264 280" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><desc>Created with getavataaars.com</desc><defs><circle id="path-1" cx="120" cy="120" r="120"></circle><path d="M12,160 C12,226.27417 65.72583,280 132,280 C198.27417,280 252,226.27417 252,160 L264,160 L264,-1.42108547e-14 L-3.19744231e-14,-1.42108547e-14 L-3.19744231e-14,160 L12,160 Z" id="path-3"></path><path d="M124,144.610951 L124,163 L128,163 L128,163 C167.764502,163 200,195.235498 200,235 L200,244 L0,244 L0,235 C-4.86974701e-15,195.235498 32.235498,163 72,163 L72,163 L76,163 L76,144.610951 C58.7626345,136.422372 46.3722246,119.687011 44.3051388,99.8812385 C38.4803105,99.0577866 34,94.0521096 34,88 L34,74 C34,68.0540074 38.3245733,63.1180731 44,62.1659169 L44,56 L44,56 C44,25.072054 69.072054,5.68137151e-15 100,0 L100,0 L100,0 C130.927946,-5.68137151e-15 156,25.072054 156,56 L156,62.1659169 C161.675427,63.1180731 166,68.0540074 166,74 L166,88 C166,94.0521096 161.51969,99.0577866 155.694861,99.8812385 C153.627775,119.687011 141.237365,136.422372 124,144.610951 Z" id="path-5"></path></defs><g id="Avataaar" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-825.000000, -1100.000000)" id="Avataaar/Circle"><g transform="translate(825.000000, 1100.000000)"><g id="Mask"></g><g id="Avataaar" stroke-width="1" fill-rule="evenodd" mask="url(#mask-4)"><g id="Body" transform="translate(32.000000, 36.000000)"><mask id="mask-6" fill="white"><use xlink:href="#path-5"></use></mask><use fill="#D0C6AC" xlink:href="#path-5"></use><g id="Skin/👶🏽-03-Brown" mask="url(#mask-6)" fill="#AE5D29"><g transform="translate(-32.000000, 0.000000)" id="Color"><rect x="0" y="0" width="264" height="244"></rect></g></g><path d="M156,79 L156,102 C156,132.927946 130.927946,158 100,158 C69.072054,158 44,132.927946 44,102 L44,79 L44,94 C44,124.927946 69.072054,150 100,150 C130.927946,150 156,124.927946 156,94 L156,79 Z" id="Neck-Shadow" fill-opacity="0.100000001" fill="#000000" mask="url(#mask-6)"></path></g><g id="Clothing/Shirt-Crew-Neck" transform="translate(0.000000, 170.000000)"><defs><path d="M165.960472,29.2949161 C202.936473,32.3249982 232,63.2942856 232,101.051724 L232,110 L32,110 L32,101.051724 C32,62.9525631 61.591985,31.7649812 99.0454063,29.2195264 C99.0152598,29.5931145 99,29.9692272 99,30.3476251 C99,42.2107177 113.998461,51.8276544 132.5,51.8276544 C151.001539,51.8276544 166,42.2107177 166,30.3476251 C166,29.9946691 165.986723,29.6437014 165.960472,29.2949161 Z" id="react-path-433"></path></defs><mask id="react-mask-434" fill="white"><use xlink:href="#react-path-433"></use></mask><use id="Clothes" fill="#E6E6E6" fill-rule="evenodd" xlink:href="#react-path-433"></use><g id="Color/Palette/Gray-01" mask="url(#react-mask-434)" fill-rule="evenodd" fill="#929598"><rect id="🖍Color" x="0" y="0" width="264" height="110"></rect></g><g id="Shadowy" opacity="0.599999964" stroke-width="1" fill-rule="evenodd" mask="url(#react-mask-434)" fill-opacity="0.16" fill="#000000"><g transform="translate(92.000000, 4.000000)" id="Hola-👋🏼"><ellipse cx="40.5" cy="27.8476251" rx="39.6351047" ry="26.9138272"></ellipse></g></g></g><g id="Face" transform="translate(76.000000, 82.000000)" fill="#000000"><g id="Mouth/Smile" transform="translate(2.000000, 52.000000)"><defs><path d="M35.117844,15.1280772 C36.1757121,24.6198025 44.2259873,32 54,32 C63.8042055,32 71.8740075,24.574136 72.8917593,15.0400546 C72.9736685,14.272746 72.1167429,13 71.042767,13 C56.1487536,13 44.7379213,13 37.0868244,13 C36.0066168,13 35.0120058,14.1784435 35.117844,15.1280772 Z" id="react-path-435"></path></defs><mask id="react-mask-436" fill="white"><use xlink:href="#react-path-435"></use></mask><use id="Mouth" fill-opacity="0.699999988" fill="#000000" fill-rule="evenodd" xlink:href="#react-path-435"></use><rect id="Teeth" fill="#FFFFFF" fill-rule="evenodd" mask="url(#react-mask-436)" x="39" y="2" width="31" height="16" rx="5"></rect><g id="Tongue" stroke-width="1" fill-rule="evenodd" mask="url(#react-mask-436)" fill="#FF4F6D"><g transform="translate(38.000000, 24.000000)"><circle cx="11" cy="11" r="11"></circle><circle cx="21" cy="11" r="11"></circle></g></g></g><g id="Nose/Default" transform="translate(28.000000, 40.000000)" fill-opacity="0.16"><path d="M16,8 C16,12.418278 21.372583,16 28,16 L28,16 C34.627417,16 40,12.418278 40,8" id="Nose"></path></g><g id="Eyes/Wink-😉" transform="translate(0.000000, 8.000000)" fill-opacity="0.599999964"><circle id="Eye" cx="30" cy="22" r="6"></circle><path d="M70.4123979,24.204889 C72.2589064,20.4060854 76.4166529,17.7575774 81.2498107,17.7575774 C86.065907,17.7575774 90.2113521,20.3874194 92.0675822,24.1647016 C92.618991,25.2867751 91.8343342,26.2050591 91.0428374,25.5246002 C88.5917368,23.4173607 85.1109468,22.1013658 81.2498107,22.1013658 C77.5094365,22.1013658 74.1259889,23.3363293 71.6897696,25.3292186 C70.7990233,26.0578718 69.8723316,25.3159619 70.4123979,24.204889 Z" id="Winky-Wink" transform="translate(81.252230, 21.757577) rotate(-4.000000) translate(-81.252230, -21.757577) "></path></g><g id="Eyebrow/Outline/Up-Down" fill-opacity="0.599999964" fill-rule="nonzero"><path d="M15.5914402,14.1619718 C20.0874642,7.83556966 29.6031809,4.65350252 39.3473715,7.79575991 C40.3986323,8.13476518 41.5256656,7.55736801 41.8646708,6.50610724 C42.2036761,5.45484647 41.6262789,4.32781316 40.5750182,3.98880789 C29.1665516,0.309863172 17.8358054,4.09887835 12.3309495,11.8448183 C11.6910852,12.7451779 11.9022584,13.9937761 12.8026181,14.6336404 C13.7029777,15.2735046 14.9515759,15.0623314 15.5914402,14.1619718 Z" id="Eyebrow"></path><path d="M73.6376405,21.1577995 C77.5525501,15.6490895 88.2853148,12.56006 97.5304219,14.8304032 C98.6031199,15.0938282 99.6862617,14.4377829 99.9496867,13.3650849 C100.213112,12.2923868 99.5570664,11.2092451 98.4843684,10.9458201 C87.7477584,8.30920485 75.3194947,11.8862211 70.3771498,18.840646 C69.7372855,19.7410057 69.9484587,20.9896038 70.8488184,21.6294681 C71.749178,22.2693324 72.9977762,22.0581591 73.6376405,21.1577995 Z" id="Eyebrow" transform="translate(85.007549, 16.038421) scale(-1, 1) translate(-85.007549, -16.038421) "></path></g></g><g id="Top" stroke-width="1" fill-rule="evenodd"><defs><rect id="react-path-441" x="0" y="0" width="264" height="280"></rect><path d="M156,180.610951 C173.530782,172.282984 186.048193,155.114792 187.791419,134.867187 C193.569129,134.002364 198,129.018625 198,123 L198,110 C198,104.054007 193.675427,99.1180731 188,98.1659169 L188,92 C188,84.0546578 186.345324,76.495786 183.361772,69.6491845 C173.434911,53 89.3126235,53.8033992 80.7098777,69.4854816 C77.6811789,76.3752214 76,83.9912805 76,92 L76,98.1659169 C70.3245733,99.1180731 66,104.054007 66,110 L66,123 C66,129.018625 70.4308707,134.002364 76.2085808,134.867187 C77.9518066,155.114792 90.4692178,172.282984 108,180.610951 L108,199 L104,199 L104,199 C64.235498,199 32,231.235498 32,271 L32,280 L232,280 L232,271 C232,231.235498 199.764502,199 160,199 L156,199 L156,180.610951 Z M0,5.68434189e-14 L264,5.68434189e-14 L264,280 L0,280 L0,5.68434189e-14 Z" id="react-path-440"></path><filter x="-0.8%" y="-2.0%" width="101.5%" height="108.0%" filterUnits="objectBoundingBox" id="react-filter-437"><feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset><feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.16 0" type="matrix" in="shadowOffsetOuter1" result="shadowMatrixOuter1"></feColorMatrix><feMerge><feMergeNode in="shadowMatrixOuter1"></feMergeNode><feMergeNode in="SourceGraphic"></feMergeNode></feMerge></filter></defs><mask id="react-mask-438" fill="white"><use xlink:href="#react-path-441"></use></mask><g id="Mask"></g><g id="Top/Accesories/Hat" mask="url(#react-mask-438)"><g transform="translate(-1.000000, 0.000000)"><g id="Hat" stroke-width="1" fill-rule="evenodd" transform="translate(1.000000, 0.000000)"><mask id="react-mask-439" fill="white"><use xlink:href="#react-path-440"></use></mask><g id="Mask-Hair"></g><path d="M123.182388,2 L141.817612,2 L141.817612,2 C160.609055,2 176.866947,15.0804442 180.890118,33.4361631 L190,75 L75,75 L84.1098821,33.4361631 L84.1098821,33.4361631 C88.1330533,15.0804442 104.390945,2 123.182388,2 Z" fill="#1F333C" mask="url(#react-mask-439)"></path><ellipse id="Hipster" fill="#1F333C" mask="url(#react-mask-439)" cx="132" cy="87.5" rx="122" ry="57.5"></ellipse><ellipse id="Very" fill="#15232A" mask="url(#react-mask-439)" cx="132" cy="82" rx="62" ry="25"></ellipse></g><g id="Facial-Hair/Beard-Magestic" transform="translate(49.000000, 72.000000)"><defs><path d="M65.1802189,77.7372986 C67.3631845,76.1045334 80.4065113,75.4786511 82.757829,74.0894494 C83.4916461,73.6553857 84.0610723,73.215719 84.4997781,72.7800074 C84.938814,73.215719 85.5085703,73.6553857 86.2423874,74.0894494 C88.593375,75.4786511 101.636702,76.1045334 103.819667,77.7372986 C106.030032,79.3908276 107.643571,83.1846831 107.466966,86.15095 C107.255041,89.7101408 103.361486,98.2028927 93.6723269,99.1811016 C91.5576925,96.8281927 88.2368647,95.3104528 84.4997781,95.3104528 C80.7633517,95.3104528 77.4421938,96.8281927 75.3275594,99.1811016 C65.6387308,98.2028927 61.7451757,89.7101408 61.5332501,86.15095 C61.3566455,83.1846831 62.9701849,79.3908276 65.1802189,77.7372986 M103.141638,94.9063813 C103.142958,94.9057221 103.144609,94.905063 103.145929,94.9047334 C103.144278,94.905063 103.142958,94.9057221 103.141638,94.9063813 M65.8453747,94.9014375 C65.8493359,94.9030855 65.8565982,94.9057221 65.8618798,94.9076997 C65.8565982,94.9057221 65.8509864,94.9034151 65.8453747,94.9014375 M144.86259,55.9853335 C144.47439,50.0303878 143.277769,44.1519058 142.233986,38.2862777 C141.952739,36.7072349 140.423706,26 139.734783,26 C139.502391,35.1094058 138.701893,44.0803858 137.669664,53.1393651 C137.361018,55.8475668 137.037848,58.5564277 136.825262,61.2741874 C136.653609,63.4695546 136.959614,66.1220564 136.427819,68.2455739 C135.749129,70.9524573 132.348087,73.4783984 129.702978,74.410795 C123.102915,76.7373371 117.597802,67.1077689 111.960977,64.2911336 C104.643272,60.6347152 92.0637391,59.7639895 84.5816434,64.5297918 C76.9361472,59.7639895 64.356614,60.6347152 57.0389092,64.2911336 C51.4024147,67.1077689 45.8969708,76.7373371 39.2972383,74.410795 C36.6521296,73.4783984 33.2504268,70.9524573 32.572397,68.2455739 C32.0402723,66.1220564 32.346277,63.4695546 32.174954,61.2741874 C31.9623682,58.5564277 31.6388681,55.8475668 31.3302226,53.1393651 C30.2983232,44.0803858 29.4974953,35.1094058 29.2654335,26 C28.5761802,26 27.0468169,36.7072349 26.7658999,38.2862777 C25.7221169,44.1519058 24.5258266,50.0303878 24.1376265,55.9853335 C23.738533,62.1047422 24.2148704,68.1674622 25.4695887,74.1632765 C26.0687242,77.0277016 26.7685407,79.8756475 27.518863,82.7041478 C28.352701,85.8467429 27.198994,91.9661516 27.5723395,95.1921317 C28.2787581,101.29572 31.1542781,113.199679 34.3833375,118.45096 C35.9440605,120.989096 37.7734867,122.573742 39.816489,124.619148 C41.7825775,126.58809 42.6038717,129.640049 44.7260985,131.73687 C48.6820428,135.645092 54.4456266,137.971304 60.3656788,138.543134 C65.6773527,143.050212 74.505605,146 84.4997781,146 C94.4946114,146 103.322534,143.050212 108.634538,138.543134 C114.55393,137.971304 120.317843,135.645092 124.274118,131.73687 C126.396015,129.640049 127.217309,126.58809 129.183727,124.619148 C131.2264,122.573742 133.055826,120.989096 134.616879,118.45096 C137.845608,113.199679 140.721458,101.29572 141.427547,95.1921317 C141.800892,91.9661516 140.647185,85.8467429 141.481353,82.7041478 C142.231676,79.8756475 142.931162,77.0277016 143.530628,74.1632765 C144.784686,68.1674622 145.261353,62.1047422 144.86259,55.9853335 Z" id="react-path-443"></path></defs><mask id="react-mask-442" fill="white"><use xlink:href="#react-path-443"></use></mask><use id="Glorious-Beard" fill="#5E7AA9" fill-rule="evenodd" xlink:href="#react-path-443"></use><g id="Color/Hair/Brown" mask="url(#react-mask-442)" fill="#2C1B18"><g transform="translate(-32.000000, 0.000000)" id="Color"><rect x="0" y="0" width="264" height="244"></rect></g></g></g></g></g></g></g></g></g></g></svg>
+  </div>
+
   </body>
 </html>
