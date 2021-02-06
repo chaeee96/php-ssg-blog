@@ -85,54 +85,6 @@ a {
   /* 3 */
 }
 
-/* 폰트 적용 끝 */
-body,
-ul,
-li {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-.top-bar {
-  height: 100px;
-}
-.con {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 1200px;
-}
-.h100p {
-  height: 100%;
-}
-
-.top-bar__menu-box1 {
-  background-color: rgb(180, 147, 152);
-}
-
-.flex {
-  display: flex;
-}
-
-.flex-jc {
-  justify-content: center;
-}
-.flex-ai {
-  align-items: center;
-}
-
-li {
-  flex: 1 0 0;
-  background-color: plum;
-  border: steelblue solid;
-}
-a {
-  /* background-color: tomato; */
 .prod-list > ul > li > .image-box::before {
   content: "";
   position: absolute;
